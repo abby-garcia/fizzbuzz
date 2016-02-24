@@ -1,23 +1,34 @@
+// jquery
+$( document ).ready(function() {
+
+    $('body').append(fizzBuzz(15));
+});
+
+
 function fizzBuzz(num){
+    var html ="";
     for(var i = 1; i <= num; i++){
         if(i % 3 === 0 && i % 5 === 0){
-            console.log("fizzbuzz");
+            html+= "<br>fizzbuzz";
         }
         else if (i % 5 === 0 ){
-            console.log("buzz");
+            html+= "<br>buzz";
         }
 
         else if (i % 3 === 0){
-            console.log("fizz");
+            html+= "<br>fizz";
         }
 
         else{
-            console.log(i);
+            html+= "<br>" + i;
         }
     }
+    return html;
+
 }
 
-fizzBuzz(15);
 
-// order matters
+
+
+
 
