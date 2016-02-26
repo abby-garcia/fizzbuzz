@@ -5,9 +5,14 @@ $( document ).ready(function() {
 });
 
 
-function fizzBuzz(num){
+//prompt section?
+
+function fizzBuzz(answer){
+    var answer = parseInt(prompt("Please Enter Number."));
+
+
     var html ="";
-    for(var i = 1; i <= num; i++){
+    for(var i = 1; i <= answer; i++){
         if(i % 3 === 0 && i % 5 === 0){
             html+= "<br>fizzbuzz";
         }
